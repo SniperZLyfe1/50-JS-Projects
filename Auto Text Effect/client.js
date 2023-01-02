@@ -26,11 +26,10 @@ function createdFunc(txt){
 intervalText()
 
 input.addEventListener('input', (e) => {
-
     speed = e.target.value;
     counter = 0;
 
-    if(e.target.value === ''){
+    if(e.target.value === '' || e.target.value === '0'){
         clearInterval(interval)
         textContainer.innerHTML = ''
     }else{
