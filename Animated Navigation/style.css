@@ -33,11 +33,12 @@ ul{
     align-items:center;
     flex-direction: row;
     opacity: 1;
-    transition: all 0.10s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 ul.hidden{
     opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -49,7 +50,8 @@ li{
 
 li:hover{
     transform:scale(1.1);
-    transition:all 0.2s ease-in-out
+    transition:all 0.2s ease-in-out;
+    color:rgb(54, 123, 235);
 }
 
 nav{
