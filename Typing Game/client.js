@@ -1,6 +1,12 @@
 const lettersContainer = document.querySelector('.letters-container')
 const loadingContainer = document.querySelector('.starting-container')
 const gameContainer = document.querySelector('.container')
+const instruction = document.querySelector('.instruction')
+const screen_start = document.querySelector('.start-screen')
+const instruction_close = document.querySelector('.instruction button')
+const play = document.querySelector('.play')
+const help = document.querySelector('.help')
+const quit = document.querySelector('.quit')
 
 let leftPos = [10,20,30,40,50,60,70,80,90]
 let alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -75,19 +81,44 @@ function startGame(){
 
 function startType(){
     const created_letters = setInterval(() => {
-        if(alphabet.length <= 1) {
+        if(alphabet.length < 1) {
             clearInterval(created_letters)
-            endGame()
+            gameContainer.classList.add('hidden')
+            screen_start.classList.remove('hidden')
+            document.querySelector('.notification-win').classList.add('active')
+            setTimeout(() => {
+                document.querySelector('.notification-win').classList.remove('active')
+            },1000)
+        }
+
+        if(fail_counter >= 5){
+            clearInterval(created_letters)
+            gameContainer.classList.add('hidden')
+            screen_start.classList.remove('hidden')
+            document.querySelector('.notification-lose').classList.add('active')
+            setTimeout(() => {
+                document.querySelector('.notification-lose').classList.remove('active')
+            },1000)
         }
         if(leftPos.length <= 1) leftPos = [10,20,30,40,50,60,70,80,90]
 
-        if(fail_counter >= 5) {
-            clearInterval(created_letters)
-            endGame()
-        }
         createLetters()
     }, 1000);
 }
 
+quit.addEventListener('click', () => window.close())
 
-startGame()
+help.addEventListener('click', () => {
+    instruction.classList.remove('hidden')
+    screen_start.classList.add('hidden')
+})
+
+instruction_close.addEventListener('click',() => {
+    instruction.classList.add('hidden')
+    screen_start.classList.remove('hidden')
+})
+
+play.addEventListener('click', () => {
+    screen_start.classList.add('hidden')
+    endGame()
+})

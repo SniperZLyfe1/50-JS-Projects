@@ -10,7 +10,22 @@
 </head>
 <body>
 
-    <div class="starting-container">
+    <div class="start-screen">
+        <ul>
+            <li class="play">Play</li>
+            <li class="help">Help</li>
+            <li class="quit">Quit</li>
+        </ul>
+    </div>
+
+    <div class="instruction hidden">
+        <button>CLOSE</button>
+        <h1><strong>Instruction:</strong></h1>
+        <small>This is simple game to test your typing skills</small>
+        <small>You will lose the game on certain amount of failed attempts</small>
+        <small>You will win once you complete all the alphabets</small>
+    </div>
+    <div class="starting-container hidden">
         <i class="fa-brands fa-hackerrank"></i>
         <h1>Starting Game...</h1>
     </div>
@@ -20,6 +35,9 @@
         <div class="letters-container">
         </div>
     </div>
+
+    <div class="notification-win">You have won!</div>
+    <div class="notification-lose">You have lose!</div>
     <script src="client.js"></script>
 </body>
 </html>

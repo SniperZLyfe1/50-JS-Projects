@@ -5,6 +5,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .container{
@@ -53,6 +54,98 @@ span{
 
 i{
     font-size: 100px;
+}
+
+li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style:none;
+    font-size: 40px;
+    margin: 40px;
+    color: #0c3e64;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+li:hover{
+    list-style:disc;
+    color: rgb(58, 186, 58);
+    text-decoration:underline;
+    transform: scale(1.2);
+}
+
+.instruction{
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #0c3e64;
+    color:white;
+    position: relative;
+}
+
+.instruction small{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.instruction button{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 20px;
+    border-color:transparent;
+    background-color: transparent;
+    color:white;
+    font-family:fantasy;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.notification-win{
+    position: absolute;
+    border:2px solid black;
+    top:10%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c3e64;
+    color: rgb(58, 186, 58);
+    font-size: 30px; 
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.notification-lose{
+    position: absolute;
+    border:2px solid black;
+    top:10%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c3e64;
+    color: red;
+    font-size: 30px; 
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.notification-lose.active,
+.notification-win.active{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.instruction button:hover{
+    transform:scale(1.1);
+    color: rgb(58, 186, 58);
 }
 
 .hidden{
