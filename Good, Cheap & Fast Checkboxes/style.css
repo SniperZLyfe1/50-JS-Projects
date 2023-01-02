@@ -1,0 +1,87 @@
+body{
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ball{
+    width:80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.good-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.cheap-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.fast-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.ball-rotate{
+    width:35px;
+    height:35px;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 2px;
+    cursor: pointer;
+    transition: margin-left .5s ease;
+}
+
+.container{
+    width:150px;
+}
+
+.fast-text{
+    margin-right: 15px;
+}
+
+.good-text{
+    margin-right: 5px;
+}
+
+.good-inside-ball.active{
+    margin-left: 42px;
+    transition: margin-left .6s ease;
+}
+
+.cheap-inside-ball.active{
+    margin-left: 42px;
+    transition: margin-left .6s ease;
+}
+
+.ball.active{
+    background-color: purple;
+}
+
+.fast-inside-ball.active{
+    margin-left: 42px;
+    transition: margin-left .6s ease;
+    animation: scaleUp 5s forwards
+}

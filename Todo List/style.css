@@ -1,0 +1,88 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+h1{
+    font-size: 100px;
+    color:rgb(201, 178, 220);   
+}
+
+input{
+    width:250px;
+    height: 40px;
+    border-color: transparent;
+    box-shadow: 0 0 5px grey;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+input:focus{
+    outline-color: rgb(181, 131, 196);
+}
+
+input::placeholder{
+    color:rgb(213, 213, 213);
+}
+
+.todo-list{
+    margin-bottom: 50px;
+}
+
+small{
+    color:rgb(170, 170, 170);
+}
+
+.todo{
+    width:250px;
+    height: 40px;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 2px grey;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 16px;
+    align-items: center;
+    color:rgb(54, 54, 54);
+    cursor: pointer;
+}
+
+.todo.completed{
+    text-decoration:line-through;
+    color:rgb(213, 213, 213);
+}
+
+.notification{
+    position: absolute;
+    top:20px;
+    background-color:rgb(238, 89, 89);
+    width:220px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.notification.show{
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}

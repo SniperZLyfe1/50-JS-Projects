@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 47, 127);
+}
+
+button{
+    width:150px;
+    height: 50px;
+    color:rgb(93, 53, 128);
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+
+.notifcation-container{
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding:20px;
+}
+
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height: 50px;
+    color:black;
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top:10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.notification.success{
+    color:green;
+}
+
+.notification.warning{
+    color:orange;
+}
+
+.notification.error{
+    color:red;
+}

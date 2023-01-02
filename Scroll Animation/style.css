@@ -1,0 +1,39 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: rgb(233, 234, 228);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:400px;
+    height:150px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgba(27, 96, 156, 0.816);
+    color:white;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 30px;
+    transform: translateX(800%);
+    transition: all 0.1s ease-in;
+  
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-800%);
+}
+
+.box.active{
+    transform: translateX(0);
+    transition: all 0.1s ease-in;
+}

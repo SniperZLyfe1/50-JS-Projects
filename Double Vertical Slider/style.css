@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.left-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    background-color: black;
+    color:white;
+    top:0;
+    left:0;
+    transition: all 2s ease-in;
+}
+
+.right-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    top:0;
+    right:0;
+    color:white;
+    background-image: url('images/desktop_msi.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in;
+}
+
+.arrow-down{
+    position: absolute;
+    right:0;
+    top:60%;
+    width: 40px;
+    height:50px;
+    color:grey;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: aliceblue;
+}
+
+.arrow-up{
+    position: absolute;
+    left:0;
+    top:55%;
+    width: 40px;
+    height:50px;
+    color:grey;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color: aliceblue;
+}
+
+h1{
+    font-size: 50px;
+}

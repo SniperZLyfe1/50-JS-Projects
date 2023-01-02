@@ -1,0 +1,123 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 58, 165);
+    flex-direction: column;
+}
+
+input{
+    width:550px;
+    height:40px;
+    border-radius: 5px;
+    background-color:rgb(115, 65, 203) ;
+    border-color: transparent;
+    padding-left: 20px;
+    color:white;
+}
+
+input::placeholder{
+    color:rgb(166, 166, 166)
+}
+
+input:focus{
+    outline: none;
+}
+
+.profile-container{
+    position: relative;
+    width:700px;
+    height: 350px;
+    background-color:rgb(115, 65, 203) ;
+    margin-top:40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.profile-image-container{
+    position: relative;
+    background-color: rgb(69, 58, 165);
+    width:150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 10px solid rgb(69, 58, 165);
+    margin-top: 70px;
+}
+
+.profile-text-container{
+    margin-top: 50px;
+    width:450px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.social-status small{
+    margin-right: 40px;
+}
+
+.social-status span{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.repos-container{
+    margin-top:30px;
+}
+
+.repos-container span{
+    margin-right: 10px;
+    background-color: rgb(58, 48, 152);
+    padding: 0px 5px;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline-block;
+    margin:5px;  
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.notification{
+    width:150px;
+    height:50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color:red;
+    position: absolute;
+    top:0;
+    margin:10px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.notification.closed{
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+}

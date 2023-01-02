@@ -1,0 +1,36 @@
+body{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+button{
+    position: relative;
+    width:200px;
+    height:60px;
+    background-color: rgb(192, 55, 187);
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    color:white;
+    font-size: 15px;
+}
+
+span{
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color:rgba(199, 199, 199, 0.762);
+    animation: ripple 0.5s forwards;
+}
+
+@keyframes ripple {
+    100%{
+        transform: scale(20);    
+    }
+}

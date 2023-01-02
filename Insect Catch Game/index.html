@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Insect Catch Game</title>
+</head>
+<body>
+
+    <div class="logo-screen">
+        <h1>Catch The Insect</h1>
+        <button class="play-btn">Play Game</button>
+    </div>
+
+    <div class="insect-selection-screen hidden">
+        <h1>What is your "favorite" insect?</h1>
+        <ul class="insects-list">
+          <li>
+            <button class="choose-insect-btn">
+              <p>Fly</p>
+              <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+            </button>
+          </li>
+          <li>
+            <button class="choose-insect-btn">
+              <p>Mosquito</p>
+              <img
+                 src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+                 alt="mosquito"
+                 />
+            </button>
+          </li>
+          <li>
+            <button class="choose-insect-btn">
+              <p>Spider</p>
+              <img
+                 src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+                 alt="spider"
+                 />
+            </button>
+          </li>
+          <li>
+            <button class="choose-insect-btn">
+              <p>Roach</p>
+              <img
+                 src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+                 alt="roach"
+                 />
+            </button>
+          </li>
+        </ul>
+    </div>
+
+    <div class="time-score-div hidden">
+        <h2 class="time">Time: 00:00</h2>
+        <h2 class="score">Score: 0</h2>
+    </div>
+    
+    <div class="game-container hidden"></div>
+
+    <div class="notification">
+        <small>Are you annoyed yet?</small>
+        <small>You are playing an impossible game!!</small>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>

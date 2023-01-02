@@ -1,0 +1,91 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgb(70, 79, 173);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:350px;
+    height: 350px;
+    background-color: rgb(35, 41, 104);
+    border-radius: 5px;
+    box-shadow: 0 0 2px white;
+    position: relative;
+}
+
+.password-input{
+    position: relative;
+}
+
+.password-input-show{
+    width:300px;
+    height:30px;
+    background-color: rgb(22, 25, 62);
+    border-color: transparent;
+    color:white;
+}
+
+.clipboard{
+    position: absolute;
+    right:0;
+    font-size: 20px;
+    margin-top:3px;
+    margin-right: 5px;
+    color:white;
+    background-color: rgb(70, 79, 173);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.generate{
+    position: absolute;
+    bottom:10px;
+    width: 300px;
+    height:40px;
+    background-color: rgb(70, 79, 173);
+    color:white;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.generate:active{
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+
+.password-cases{
+    display: flex;
+    justify-content: flex-start;
+    width:350px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.pass-value{
+    width:30px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+}
+
+.password-cases input[type=checkbox]{
+    margin-left:120px;
+    margin-bottom: 15px;
+}
+
+#numbers-value{
+    margin-left:172px;
+}
+
+#symbols-value{
+    margin-left:173px;
+}
