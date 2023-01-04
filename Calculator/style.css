@@ -72,3 +72,7 @@ input{
     border-radius: 30%;
     background-color: red;
 }
+
+.delete-one{
+    background-color: rgb(168, 94, 94);
+}
