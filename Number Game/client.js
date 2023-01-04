@@ -9,6 +9,7 @@ let boxNumbers = 1;
 let boxes = 2;
 let currentLevel = 1;
 
+
 function moveBox(speedX,speedY){
     let x = Math.trunc(Math.random()*720)
     let y = Math.trunc(Math.random()*520)
@@ -17,6 +18,8 @@ function moveBox(speedX,speedY){
     box.style.top = `${y}px`;
     box.style.left = `${x}px`;
     box.innerHTML = boxNumbers
+
+    if(boxNumbers % 2 === 0) box.style.backgroundColor = 'cyan'
     box.style.pointerEvents = 'none'
     container.appendChild(box)
     const interval = setInterval(() => {
@@ -36,7 +39,7 @@ function moveBox(speedX,speedY){
     boxNumbers++
     setTimeout(() => {
         box.style.pointerEvents = 'auto'
-        box.style.color = '#093251'
+        box.style.color = 'transparent'
     }, 5000);
 
     box.addEventListener('click', () => {
