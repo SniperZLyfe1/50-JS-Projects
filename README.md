@@ -6,7 +6,8 @@ I made this to challenge myself, gain experience and learn new features.
 
 You are feel free to try it or get the code :)
 
-Preview: 
+Some Preview: 
+
 Memory Game: https://63b67e5f7861cf685dc796a4--timely-taffy-ca6da7.netlify.app/
 
 Number Game: https://63b67ee74fb57571cac584ca--timely-taffy-ca6da7.netlify.app/
