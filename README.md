@@ -18,3 +18,15 @@ Simple Bank: https://mellow-horse-a40d0c.netlify.app/
 Basic Calculator: https://moonlit-kringle-b77ec9.netlify.app/
 
 Password Generator: https://comforting-marzipan-a748b3.netlify.app/
+
+Note App: https://grand-starlight-aefa90.netlify.app/
+
+Insect Catch Game: https://celebrated-buttercream-680b97.netlify.app/
+
+Drawing App: https://neon-moonbeam-9f2a82.netlify.app/
+
+Github Profile: https://loquacious-mochi-7601d2.netlify.app/
+
+Drink Water: https://thriving-cocada-c60535.netlify.app/
+
+Live User Filter: https://lighthearted-bunny-9856ae.netlify.app/
