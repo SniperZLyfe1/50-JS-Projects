@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d6ad7d76d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter Clone</title>
+</head>
+<body>
+    
+    
+   <div class="container">
+        <div class="upper-design">
+            <p class="time">2: 40</p>
+            <hr>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-half"></i>
+        </div>
+
+        <div class="loader hidden"></div>
+
+        <div class="login-container">
+            <div class="login-login--input">
+                <input class="login-username" placeholder="Username">
+            </div>
+            <button class="login-button">Login in</button>
+        </div>
+
+        <div class="main--main-container hidden">
+            <div class="home-container">
+                <div class="add-tweet-container"><button class="tweet-btn"><i class="fa-solid fa-pen-to-square"></i></button></div>
+                <div class="home-title">Home</div>
+                <div class="user-tweets append-tweets">
+                    <!--Add Tweet here-->
+                    <div class="tweet">
+                        <div class="profile-container">
+                            <img  class="user-img" src="images/profile.jpg" width="50">
+                            <div class="username-container">
+                                <small class="profile-name profile-name-to-change">username</small>
+                                <small class="username user-name-to-change">@username</small>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <small class="text" maxlength="20">Working...</small>
+                        </div>
+                        <img class='tweet-img' src="images/blog.jpg" width="300">
+                        <div class="bottom-home">
+                            <i class="fa-regular fa-message"></i>
+                            <small>0</small>
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <small>0</small>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    <!--Tweet Container end here-->
+                </div>
+            </div>
+
+            <div class="main-profile--container hidden">
+                <div class="home-screen-profile-container">
+                    <div class="profile-container-main">
+                        <img  class="user-img-main" src="images/profile.jpg" width="50">
+                        <div class="username-container-main">
+                            <small class="profile-name-name profile-name-to-change">username</small>
+                            <small class="username-main user-name-to-change">@username</small>
+                        </div>
+                    </div>
+                    <div class="edit-profile">Edit Profile</div>
+                </div>
+                <div class="profile-status">
+                    <div class="tweets-count">
+                        <small>Tweets</small>
+                        <p>0</p>
+                    </div>
+                    <div class="following-count">
+                        <small>Following</small>
+                        <p>0</p>
+                    </div>
+                    <div class="followers-count">
+                        <small>Followers</small>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="profile-user-tweets append-tweets">
+                    <!--Add Tweet here-->
+                    <div class="tweet">
+                        <div class="profile-container">
+                            <img  class="user-img" src="images/profile.jpg" width="50">
+                            <div class="username-container">
+                                <small class="profile-name profile-name-to-change">username</small>
+                                <small class="username user-name-to-change">@username</small>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <small class="text" maxlength="20">Working...</small>
+                        </div>
+                        <img class='tweet-img' src="images/blog.jpg" width="300">
+                        <div class="bottom-home">
+                            <i class="fa-regular fa-message"></i>
+                            <small>0</small>
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <small>0</small>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    <!--Tweet Container end here-->
+                </div>
+            </div>
+
+            <nav class="lower-design">
+                <li class="home active"><i class="fa-solid fa-house"></i>Home</li>
+                <li class="profile"><i class="fa-solid fa-user"></i>Profile</li>
+                <hr>
+            </nav>
+
+            <!--Post Tweet Container-->
+            <div class="close-post-container hidden"></div>
+            <div class="post-container">
+                <div class="post-text-container hidden">
+                    <textarea></textarea>
+                </div>
+                <input class='add-file hidden' type="file" accept="image/*">
+            </div>
+       </div>
+   </div>
+    
+
+    <script src="client.js"></script>
+</body>
+</html>
