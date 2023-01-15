@@ -1,0 +1,243 @@
+html,body {  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:100%;
+    background-color:white;
+    height:100vh;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container{
+    position: relative;
+    width:650px;
+    height:450px;
+    background-color: #0a3e66;
+  }
+  
+  .inner-containers{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top:100px
+  }
+  
+  .box{
+    width:140px;
+    height:150px;
+    background-color: #175381;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+  }
+  
+  .inner-shape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-weight: bolder;
+  }
+  
+  .color{
+    position: absolute;
+    margin-top:20px;
+     -webkit-text-stroke: 1px #4f4f4f;
+  }
+  
+  .number{
+    position: absolute;
+    margin-top:40px;
+    transform: scale(2);
+     -webkit-text-stroke: 1px #4f4f4f;
+  }
+  
+  .shape{
+    position: absolute;
+    margin-top:60px;
+    -webkit-text-stroke: 1px #4f4f4f;
+  }
+  
+  .inner-shape.triangle{
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 110px solid red;
+  
+  }
+  
+  .inner-shape.circle{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 100%;
+    border:1px solid #4f4f4f;
+  }
+  
+  .inner-shape.rectangle {
+    width: 130px;
+    height: 80px;
+    background: red;
+    border:1px solid #4f4f4f;
+  }
+  
+  .inner-shape.square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border:1px solid #4f4f4f;
+  }
+  
+  .inner-number{
+    color:white;
+    font-size: 100px;
+    animation: scaleDown 5s forwards
+  }
+  
+  @keyframes scaleDown{
+    100%{
+      transform: scale(0);
+    }
+  }
+  
+  .loading-bar{
+    position: absolute;
+    width:600px;
+    height:3px;
+    background-color:rgba(185, 135, 0, 0.5);
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .loader{
+    position: absolute;
+    width:0px;
+    height:3px;
+    background-color:rgba(185, 135, 0, 1);
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .loader.show{
+    animation: loaderAnim 10s reverse;
+  }
+  
+  @keyframes loaderAnim{
+    100%{
+       width:600px;
+    }
+  }
+  
+  .footer{
+    position: absolute;
+    bottom:-15px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer p{
+    color:white;
+    margin-bottom: -5px;
+    font-size:10px;
+  }
+  
+  .question{
+    color:white;
+    transform: scale(1.5);
+    font-weight: bolder;
+  }
+  
+  .answers{
+    flex-direction: column;
+    color:white;
+    margin-top:10px;
+  }
+  
+  .answers p{
+    margin-left:30px;
+  }
+  
+  .answer{
+    font-size: 25px;
+  }
+  
+  .footer input{
+   margin-top:10px;
+    color:white;
+    border-color: transparent;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    padding-left: 10px;
+  }
+  
+  input:focus{
+    outline:none
+  }
+  
+  .game-over-container,.game-complete-container,.starting-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    color:white;
+  }
+  
+  .game-over-container i,.game-complete-container i{
+    font-size:50px;
+    margin-top:100px
+  }
+  
+  .game-over-container h1,.game-complete-container h1{
+    font-size:20px;
+  }
+  
+  .game-over-container button,.game-complete-container button{
+    margin-top:80px;
+    width:200px;
+    height:50px;
+    background-color: #002847;
+    border-color: transparent;
+    color:white;
+    cursor: pointer;
+  }
+  
+  .game-over-container p{
+    font-size: 10px;
+    margin-top:50px;
+    margin-bottom: -30px;
+    color:#a3a3a3;
+  }
+  
+  .starting-container i{
+    font-size:100px;
+    margin-top:150px;
+  }
+  
+  .starting-container h1{
+    font-size:20px;
+  }
+
+  .start{
+    margin-top:20px;
+    width:200px;
+    height:50px;
+    background-color: #002847;
+    border-color: transparent;
+    color:white;
+    cursor: pointer;
+  }
+  .hidden{
+    display:none
+  }
+  
+  

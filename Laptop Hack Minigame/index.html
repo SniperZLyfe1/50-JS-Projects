@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d6ad7d76d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Laptop Hack Minigame</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class='game-container hidden'>
+      <div class='inner-containers'>
+        <div class="box">
+          <h1 class=inner-number></h1>
+          <div class="inner-shape hidden">
+            <div class="color"></div>
+            <div class="number"></div>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="box">
+          <h1 class=inner-number></h1>
+          <div class="inner-shape hidden">
+            <div class="color"></div>
+            <div class="number"></div>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="box">
+          <h1 class=inner-number></h1>
+          <div class="inner-shape hidden">
+            <div class="color"></div>
+            <div class="number"></div>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="box">
+          <h1 class=inner-number></h1>
+          <div class="inner-shape hidden">
+            <div class="color"></div>
+            <div class="number"></div>
+            <div class="shape"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class=loading-bar>
+        <div class="loader"></div>
+      </div>
+
+      <div class="footer hidden">
+        <p class=question></p>
+        <div class="answers">
+          <p>Answer</p>
+          <label for=answer><i class="fa-brands fa-hackerrank"></i></label>
+          <input placeholder="blue square">
+        </div>
+      </div>
+    </div>
+
+    <div class='game-over-container hidden'>
+      <i class="fa-solid fa-circle-exclamation"></i>
+      <h1>YOU HAVE FAILED TO BYPASS THE SYSTEM SECURITY</h1>
+      <button class=retry>Connect Again</button>
+      <p>The time ran out or/ Wrong Input, Better Try Next Time</p>
+      <p> Too fast? Practice typing speed</p>
+    </div>
+
+    <div class='starting-container'>
+      <i class="fa-solid fa-laptop-code"></i>
+      <h1 class=texts>ESTABLISHING CONNECTION...</h1>
+      <button class="start">CONNECT TO DATABASE</button>
+    </div>
+
+    <div class='game-complete-container hidden'>
+      <i class="fa-solid fa-wifi"></i>
+      <h1>YOU HAVE SUCCESSFULLY BYPASS THE SYSTEM SECURITY</h1>
+      <button class=connect>Connect To Different System</button>
+    </div>
+  </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
