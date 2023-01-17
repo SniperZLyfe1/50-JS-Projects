@@ -1,0 +1,102 @@
+html,body {  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:100%;
+    background-color:#0084ff;
+    height:100vh;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .clock{
+    position: relative;
+    width:500px;
+    height:500px;
+    background-color: white;
+    color:black;
+    border-radius: 50%;
+    border:5px solid black;
+  }
+  
+  .number{
+    --rotation: 0deg;
+    position: absolute;
+    text-align: center;
+    width:500px;
+    height:500px;
+    font-size:30px;
+    transform: rotate(var(--rotation));
+  }
+  
+  .number.number1{--rotation:30deg}
+  .number.number2{--rotation:60deg}
+  .number.number3{--rotation:90deg}
+  .number.number4{--rotation:120deg}
+  .number.number5{--rotation:150deg}
+  .number.number6{--rotation:180deg}
+  .number.number7{--rotation:210deg}
+  .number.number8{--rotation:240deg}
+  .number.number9{--rotation:270deg}
+  .number.number10{--rotation:300deg}
+  .number.number11{--rotation:330deg}
+  
+  .hand{
+    --rotation:0;
+    transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+  }
+  
+  .hand.hour{
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    width:10px;
+    height:50%;
+    background-color: black;
+    z-index: 10;
+    border:1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .hand.minute{
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    width:5px;
+    height:50%;
+    background-color: black;
+    z-index: 5;
+    border:1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .hand.second{
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    width:2px;
+    height:50%;
+    background-color: #fe9090;
+    z-index: 5;
+    border:1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .hand.hour::before{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: black;
+    top:100%;
+    left:50%;
+    transform: translate(-50%) translateY(-50%);
+    z-index:99;
+  }
