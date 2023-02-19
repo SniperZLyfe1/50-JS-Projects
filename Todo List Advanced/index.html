@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    
+    <div class="list-container">
+        <nav>
+          <h1><strong>My List</strong></h1>
+          <ul class="list-task-info"></ul>
+        </nav>
+        <div class="left-input-container">
+          <label for="left-input">+</label>
+          <input type="text" id="left-input" maxlength="10" />
+        </div>
+      </div>
+  
+      <div class="todo-info-container none">
+        <div class="header">
+          <h1 class="todo-title">Youtube</h1>
+          <small><span class="remain">0</span> Task Remaining</small>
+        </div>
+        <div class="todo-list"></div>
+        <div class="right-input-container">
+          <label for="right-input">+</label>
+          <input
+            type="text"
+            id="right-input"
+            maxlength="15"
+            placeholder="new task name"
+          />
+        </div>
+        <div class="clear-todo">
+          <small class="clear-completed">Clear Completed Task</small>
+          <small class="clear-list">Delete List</small>
+        </div>
+      </div>
+  
+    <script src="client.js"></script>
+</body>
+</html>
