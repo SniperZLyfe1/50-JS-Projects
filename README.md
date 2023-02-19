@@ -1,6 +1,6 @@
-# 50-JS-Projects
+# JS-Projects
 
-50 Days 50 Project Challenge
+Project Challenges
 
 I made this to challenge myself, gain experience and learn new features.
 
