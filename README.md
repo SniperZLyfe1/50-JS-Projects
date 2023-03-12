@@ -10,6 +10,8 @@ Some Preview:
 
 Twitter Clone: https://moonlit-pika-275aca.netlify.app/
 
+Youtube Resource Gallery: https://glistening-paprenjak-0a1248.netlify.app/
+
 Laptop Game: https://genuine-ganache-e8af77.netlify.app/
 
 Memory Game: https://63b67e5f7861cf685dc796a4--timely-taffy-ca6da7.netlify.app/
