@@ -8,6 +8,8 @@ You are feel free to try it or get the code :)
 
 Some Preview: 
 
+Todo List: https://gentle-toffee-4af1de.netlify.app/
+
 Twitter Clone: https://moonlit-pika-275aca.netlify.app/
 
 Youtube Resource Gallery: https://glistening-paprenjak-0a1248.netlify.app/
