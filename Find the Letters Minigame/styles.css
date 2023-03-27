@@ -1,0 +1,66 @@
+body{
+    width:100%;
+    height:100vh;
+    margin:0;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+  /* #0a3e66 */
+  
+  .container{
+    background-color:  #0a3657;
+    color:white;
+    height:650px;
+    width:600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  i{
+    font-size: 5rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  h3{
+    margin-bottom: -20px;
+  }
+  
+  h4{
+    font-size: 2rem;
+     margin-bottom: 10px;
+  }
+  
+  small{
+    color:green;
+    font-size: 1.2rem;
+  }
+  
+  .active{
+    color:green
+  }
+  
+  .wrong{
+    color:red;
+  }
+  
+  .game-container{
+    width:500px;
+  /*   border:1px solid black; */
+    height:300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+  }
+  
+  .game-container .codes{
+    flex: 1 0 10%;
+    margin:7px 0;
+    text-align: center;
+    font-size: 18px;
+  }
