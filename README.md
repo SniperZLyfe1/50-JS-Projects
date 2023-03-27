@@ -8,6 +8,8 @@ You are feel free to try it or get the code :)
 
 Some Preview: 
 
+Find the Letter Minigame: https://lucent-kleicha-1d3c0a.netlify.app/
+
 Todo List: https://gentle-toffee-4af1de.netlify.app/
 
 Twitter Clone: https://moonlit-pika-275aca.netlify.app/
