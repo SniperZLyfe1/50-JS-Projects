@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8d6ad7d76d.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="starting-screen">
+        <h1>Weather App</h1>
+        <hr />
+        <div class="notification hidden">user denied Geolocation</div>
+        <input type="text" class="search" placeholder="Enter City Name" />
+        <div class="starting-mid">
+          <hr />
+          <small>or</small>
+          <hr />
+        </div>
+        <button class="get-location">Get Device Location</button>
+      </div>
+  
+      <div class="weather-screen hidden">
+        <h1 class="weather-screen-title">
+          <span class="go-back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </span>
+          Weather App
+        </h1>
+        <hr />
+        <div class="weather-inner-container">
+          <div class="weather-icon">
+            <img src="/images/clear.svg" />
+          </div>
+          <h1 class="temperature">21°C</h1>
+          <small class="weather-status">Moderate Rain</small>
+          <small class="weather-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Surkhet, Nepal</span>
+          </small>
+        </div>
+        <hr />
+        <div class="feels-like-weather-container">
+          <div class="feels-like-left">
+            <i class="fa-solid fa-temperature-half"></i>
+            <div class="feels-like-left-inner">
+              <h2 class="feels-like">21°C</h2>
+              <small>Feels like</small>
+            </div>
+          </div>
+          <div class="vertical"></div>
+          <div class="feels-like-right">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="feels-like-right-inner">
+              <h2 class="humidity">93%</h2>
+              <small>Humidity</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
