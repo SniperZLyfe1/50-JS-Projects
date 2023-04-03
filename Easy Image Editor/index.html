@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/8d6ad7d76d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Easy Image Editor</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class=title>Easy Image Editor</h1>
+        <div class="inner-mid">
+          <div class="filter-container">
+            <h2 class=title-inner>Filters & Rotation</h2>
+            <div class="filters-options">
+              <div class="options brightness active">Brightness</div>
+              <div class="options saturate">Saturation</div>
+              <div class="options invert">Inversion</div>
+              <div class="options grayscale">Grayscale</div>
+            </div>
+            <div class="filter-data-title">
+              <small class="filter-name">Brightness</small>
+              <small class="filter-percentage" value=20 min=0 max=100>100%</small>
+            </div>
+            <div class="percentage-range-container">
+              <input type="range" class="slider">
+            </div>
+            <div class="transform-options">
+              <button class="rotate-left"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+              <button class="rotate-right"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+              <button class="full-rotate"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+          </div>
+          <div class="image-container">
+            No Image Found
+          </div>
+        </div>
+        <div class="btn-container">
+          <div class="left-btn">
+            <button class="reset">RESET FILTERS</button>
+          </div>
+          <div class="right-btn">
+            <div class="file-input">
+              <input type="file" id="file" class="file">
+              <label for="file">
+                SELECT FILE
+                <p class="file-name"></p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
