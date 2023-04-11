@@ -10,6 +10,10 @@ Some Preview:
 
 Find the Letter Minigame: https://lucent-kleicha-1d3c0a.netlify.app/
 
+Image Gallery: https://courageous-kashata-a43bdd.netlify.app/
+
+Simple Weather App: https://venerable-sable-ee97c8.netlify.app/
+
 Todo List: https://gentle-toffee-4af1de.netlify.app/
 
 Twitter Clone: https://moonlit-pika-275aca.netlify.app/
